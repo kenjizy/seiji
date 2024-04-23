@@ -60,7 +60,7 @@ public class accountD extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(51, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 0, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/images.png"))); // NOI18N
@@ -72,7 +72,7 @@ public class accountD extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, -1));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, -1, -1));
 
         acc_ln.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         acc_ln.setText("USER");
@@ -89,11 +89,11 @@ public class accountD extends javax.swing.JFrame {
                 jLabel8MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 90, 30));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 90, 30));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 320));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 400));
 
-        jPanel2.setBackground(new java.awt.Color(204, 255, 204));
+        jPanel2.setBackground(new java.awt.Color(255, 51, 204));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -102,31 +102,31 @@ public class accountD extends javax.swing.JFrame {
 
         idd.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         idd.setText("(UID)");
-        jPanel2.add(idd, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 10, 50, 30));
+        jPanel2.add(idd, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 10, 110, 30));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, 530, 60));
 
-        jLabel3.setText("First Name");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, -1, -1));
+        jLabel3.setText("First Name:");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, -1, -1));
 
-        jLabel6.setText("Last Name");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, -1, -1));
+        jLabel6.setText("Last Name:");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, -1, -1));
 
-        jLabel4.setText("Gmail");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, -1, -1));
+        jLabel4.setText("Gmail:");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 200, 40, 20));
 
-        jLabel5.setText("UserName");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 200, -1, -1));
-        getContentPane().add(fn, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 110, 190, -1));
-        getContentPane().add(ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 140, 190, -1));
-        getContentPane().add(mail, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, 190, -1));
-        getContentPane().add(us, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, 190, -1));
+        jLabel5.setText("UserName:");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, -1, 20));
+        getContentPane().add(fn, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 140, 190, -1));
+        getContentPane().add(ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, 190, -1));
+        getContentPane().add(mail, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 200, 190, -1));
+        getContentPane().add(us, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 230, 190, -1));
 
         ut.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "User", "Admin", " " }));
-        getContentPane().add(ut, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 230, 190, -1));
+        getContentPane().add(ut, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 260, 190, -1));
 
-        jLabel10.setText("User Type");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, -1, -1));
+        jLabel10.setText("User Type:");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 260, 60, 20));
 
         pack();
         setLocationRelativeTo(null);

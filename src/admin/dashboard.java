@@ -50,11 +50,11 @@ public class dashboard extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(51, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 0, 153));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/images.png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 80, 90));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 80, 90));
 
         jButton2.setText("LOG-OUT");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -65,16 +65,16 @@ public class dashboard extends javax.swing.JFrame {
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, -1));
 
         acc_fname.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        acc_fname.setText("             ADMIN");
-        jPanel1.add(acc_fname, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 140, 20));
+        acc_fname.setText(" ADMIN");
+        jPanel1.add(acc_fname, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 70, 30));
 
         acc_lname.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        acc_lname.setText("             ADMIN");
-        jPanel1.add(acc_lname, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 140, 20));
+        acc_lname.setText(" ADMIN");
+        jPanel1.add(acc_lname, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 70, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 320));
 
-        jPanel2.setBackground(new java.awt.Color(204, 255, 204));
+        jPanel2.setBackground(new java.awt.Color(255, 0, 0));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -83,7 +83,7 @@ public class dashboard extends javax.swing.JFrame {
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, 530, 60));
 
-        jPanel4.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel4.setBackground(new java.awt.Color(255, 51, 153));
         jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel4MouseClicked(evt);
@@ -101,7 +101,7 @@ public class dashboard extends javax.swing.JFrame {
         jPanel4.add(jLabel5);
         jLabel5.setBounds(60, 80, 50, 20);
 
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 180, 130));
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, 180, 130));
 
         pack();
         setLocationRelativeTo(null);

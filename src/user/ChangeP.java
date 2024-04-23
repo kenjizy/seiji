@@ -62,13 +62,12 @@ public class ChangeP extends javax.swing.JFrame {
                 formWindowActivated(evt);
             }
         });
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(51, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 51, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/images.png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 80, 90));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 80, 90));
 
         jButton2.setText("LOG-OUT");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -76,50 +75,39 @@ public class ChangeP extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, -1));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, -1));
 
         acc_ln.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         acc_ln.setText("USER");
-        jPanel1.add(acc_ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 50, 30));
+        acc_ln.setToolTipText("");
+        jPanel1.add(acc_ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, 60, 30));
 
         acc_fn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         acc_fn.setText("ACC_FN");
-        jPanel1.add(acc_fn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 50, 30));
+        jPanel1.add(acc_fn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 80, 30));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 360));
-
-        jPanel2.setBackground(new java.awt.Color(204, 255, 204));
+        jPanel2.setBackground(new java.awt.Color(255, 0, 51));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel9.setText("CHANGE PASSWORD");
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, 190, 34));
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, 190, 34));
 
         idd.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         idd.setText("(UID)");
-        jPanel2.add(idd, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 10, 50, 30));
+        jPanel2.add(idd, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 10, 170, 30));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, 530, 60));
+        jLabel3.setText("OLD PASSWORD:");
 
-        jLabel3.setText("OLD PASSWORD");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, -1, -1));
+        jLabel6.setText("NEW PASSWORD:");
 
-        jLabel6.setText("NEW PASSWORD");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 190, -1, -1));
-
-        jLabel4.setText("CONFIRM PASSWORD");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 230, -1, -1));
-        getContentPane().add(oldp, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 110, 190, -1));
-        getContentPane().add(newp, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, 190, -1));
-        getContentPane().add(firmp, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 230, 190, -1));
+        jLabel4.setText("CONFIRM PASSWORD:");
 
         jPanel3.setLayout(null);
 
         jLabel1.setText("BACK");
         jPanel3.add(jLabel1);
         jLabel1.setBounds(10, 10, 60, 14);
-
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 260, 80, 30));
 
         jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -132,7 +120,57 @@ public class ChangeP extends javax.swing.JFrame {
         jPanel4.add(jLabel5);
         jLabel5.setBounds(10, 10, 60, 14);
 
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 260, 80, 30));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addComponent(jLabel3)
+                        .addGap(26, 26, 26)
+                        .addComponent(oldp, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(80, 80, 80)
+                        .addComponent(jLabel6)
+                        .addGap(33, 33, 33)
+                        .addComponent(newp, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addComponent(jLabel4)
+                        .addGap(29, 29, 29)
+                        .addComponent(firmp, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(210, 210, 210)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3)
+                    .addComponent(oldp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(60, 60, 60)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6)
+                    .addComponent(newp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4)
+                    .addComponent(firmp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
 
         pack();
         setLocationRelativeTo(null);
@@ -170,9 +208,8 @@ public class ChangeP extends javax.swing.JFrame {
            
            if(oldpass.equals(oldhash)){
             String npass = PassWordH.hashPassword(newp.getText());    
-           dbc.updateData("UPDATE tbl_user SET u_password = '"+npass+"'");
-            String conpass = PassWordH.hashPassword(firmp.getText());    
-           dbc.updateData("UPDATE tbl_user SET u_password = '"+conpass+"'");
+           dbc.updateData("UPDATE tbl_user SET u_password = '"+npass+"' WHERE u_id = '"+sess.getUid()+"'");
+ 
            
            
            JOptionPane.showMessageDialog(null, "SUCCESSFULLY UPDATE");
