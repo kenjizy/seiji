@@ -103,7 +103,7 @@ public class CreateUsersF extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         id = new javax.swing.JTextField();
@@ -128,13 +128,13 @@ public class CreateUsersF extends javax.swing.JFrame {
         cl = new javax.swing.JButton();
         cc = new javax.swing.JButton();
         rf = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ken.jpg"))); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        jLabel1.setText("CREATE FORM");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 40, 130, 32));
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, -1, -1));
 
         jPanel1.setBackground(new java.awt.Color(255, 51, 102));
@@ -142,29 +142,35 @@ public class CreateUsersF extends javax.swing.JFrame {
 
         id.setEnabled(false);
         jPanel1.add(id);
-        id.setBounds(270, 100, 190, 20);
+        id.setBounds(260, 90, 190, 20);
 
         ut.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "User", "Admin", " " }));
         jPanel1.add(ut);
-        ut.setBounds(270, 280, 190, 20);
+        ut.setBounds(260, 270, 190, 20);
 
         ut1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Active", "Pending" }));
         jPanel1.add(ut1);
-        ut1.setBounds(270, 310, 190, 20);
+        ut1.setBounds(260, 300, 190, 20);
 
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("User Status:");
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(190, 310, 60, 20);
+        jLabel9.setBounds(180, 300, 69, 20);
 
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("User Type:");
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(190, 280, 53, 14);
+        jLabel8.setBounds(190, 270, 60, 14);
         jPanel1.add(pw);
-        pw.setBounds(270, 250, 190, 20);
+        pw.setBounds(260, 240, 190, 20);
 
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("PassWord:");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(190, 250, 52, 14);
+        jLabel6.setBounds(190, 240, 59, 14);
 
         us.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -172,17 +178,21 @@ public class CreateUsersF extends javax.swing.JFrame {
             }
         });
         jPanel1.add(us);
-        us.setBounds(270, 220, 190, 20);
+        us.setBounds(260, 210, 190, 20);
 
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("UserName:");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(190, 220, 53, 14);
+        jLabel5.setBounds(190, 210, 61, 14);
         jPanel1.add(mail);
-        mail.setBounds(270, 190, 190, 20);
+        mail.setBounds(260, 180, 190, 20);
 
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Gmail:");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(190, 190, 29, 14);
+        jLabel4.setBounds(210, 180, 35, 14);
 
         ln.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -190,11 +200,13 @@ public class CreateUsersF extends javax.swing.JFrame {
             }
         });
         jPanel1.add(ln);
-        ln.setBounds(270, 160, 190, 20);
+        ln.setBounds(260, 150, 190, 20);
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Last Name:");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(190, 160, 54, 14);
+        jLabel3.setBounds(180, 150, 62, 14);
 
         fn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -202,15 +214,19 @@ public class CreateUsersF extends javax.swing.JFrame {
             }
         });
         jPanel1.add(fn);
-        fn.setBounds(270, 130, 190, 20);
+        fn.setBounds(260, 120, 190, 20);
 
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("First Name:");
         jPanel1.add(jLabel10);
-        jLabel10.setBounds(190, 130, 55, 14);
+        jLabel10.setBounds(180, 120, 63, 14);
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("User ID:");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(190, 100, 40, 20);
+        jLabel2.setBounds(200, 90, 50, 20);
 
         add.setText("ADD");
         add.addActionListener(new java.awt.event.ActionListener() {
@@ -219,7 +235,7 @@ public class CreateUsersF extends javax.swing.JFrame {
             }
         });
         jPanel1.add(add);
-        add.setBounds(60, 100, 80, 23);
+        add.setBounds(50, 90, 80, 23);
 
         up.setText("UPDATE");
         up.setEnabled(false);
@@ -229,7 +245,7 @@ public class CreateUsersF extends javax.swing.JFrame {
             }
         });
         jPanel1.add(up);
-        up.setBounds(60, 140, 80, 23);
+        up.setBounds(50, 130, 80, 23);
 
         del.setText("DELETE");
         del.addActionListener(new java.awt.event.ActionListener() {
@@ -238,7 +254,7 @@ public class CreateUsersF extends javax.swing.JFrame {
             }
         });
         jPanel1.add(del);
-        del.setBounds(60, 180, 80, 23);
+        del.setBounds(50, 170, 80, 23);
 
         cl.setText("CLEAR");
         cl.addActionListener(new java.awt.event.ActionListener() {
@@ -247,7 +263,7 @@ public class CreateUsersF extends javax.swing.JFrame {
             }
         });
         jPanel1.add(cl);
-        cl.setBounds(60, 220, 80, 23);
+        cl.setBounds(50, 210, 80, 23);
 
         cc.setText("CANCEL");
         cc.addActionListener(new java.awt.event.ActionListener() {
@@ -256,7 +272,7 @@ public class CreateUsersF extends javax.swing.JFrame {
             }
         });
         jPanel1.add(cc);
-        cc.setBounds(60, 260, 80, 23);
+        cc.setBounds(50, 250, 80, 23);
 
         rf.setText("REFRESH");
         rf.addActionListener(new java.awt.event.ActionListener() {
@@ -265,9 +281,19 @@ public class CreateUsersF extends javax.swing.JFrame {
             }
         });
         jPanel1.add(rf);
-        rf.setBounds(60, 300, 80, 23);
+        rf.setBounds(50, 290, 80, 23);
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 460));
+        jLabel1.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("CREATE FORM");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(20, 10, 205, 30);
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ken.jpg"))); // NOI18N
+        jPanel1.add(jLabel13);
+        jLabel13.setBounds(0, 0, 560, 360);
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 360));
 
         pack();
         setLocationRelativeTo(null);
@@ -411,6 +437,8 @@ public class CreateUsersF extends javax.swing.JFrame {
     public javax.swing.JTextField id;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
